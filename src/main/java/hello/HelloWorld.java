@@ -9,5 +9,12 @@ public class HelloWorld {
 
         LocalTime current_time = new LocalTime();
         System.out.println(current_time);
+        System.out.print(new Lambda() {
+            @Override
+            public String sayhi() {
+                return "hello";
+            }
+        }.sayhi());
+        System.out.print("hello");
     }
 }
